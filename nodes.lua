@@ -1,3 +1,4 @@
+
 local S = moreblocks.gettext
 
 local sound_wood = default.node_sound_wood_defaults()
@@ -71,6 +72,17 @@ local nodes = {
 		tiles = tile_tiles("wood_tile_right"),
 		sounds = sound_wood,
 		no_stairs = true,
+	},
+	["quarry_tile"] = {
+		description = S("Quarry Tile"),
+		groups = {cracky=3},
+		sounds = sound_stone,
+	},
+	["riven_paving"] = {
+		description = S("Riven Paving Grey"),
+		groups = {cracky=3},
+		paramtype2 = "facedir",
+		sounds = sound_stone,
 	},
 	["circle_stone_bricks"] = {
 		description = S("Circle Stone Bricks"),
