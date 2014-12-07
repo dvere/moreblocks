@@ -1,7 +1,7 @@
 -- Load translation library if intllib is installed
 
 local S
-if intllib then
+if minetest.get_modpath("intllib") then
 	S = intllib.Getter(minetest.get_current_modname())
 else
 	S = function(s) return s end

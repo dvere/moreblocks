@@ -8,7 +8,7 @@ moreblocks = {}
 -- Load translation library if intllib is installed
 
 local S = nil
-if intllib then
+if minetest.get_modpath("intllib") then
 	S = intllib.Getter()
 else
 	S = function(s) return s end
